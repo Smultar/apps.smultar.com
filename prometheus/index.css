@@ -1,0 +1,323 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: open sans, sans-serif;
+    margin: 0;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none !important;
+}
+
+
+@-webkit-keyframes prom {
+    0% {
+        letter-spacing: 4vw;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        letter-spacing: 0.6vw;
+        opacity: 1
+    }
+}
+
+@keyframes prom {
+    0% {
+        letter-spacing: 4vw;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        letter-spacing: 0.6vw;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.link {
+    font-family: 'Open Sans';
+    font-size: 1.4vh;
+    color: black;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+    transition: all ease 0.3s;
+    margin-right: 4vh;
+    border-bottom: rgba(0, 0, 0, 0) solid 0.1vh;
+    opacity: 0;
+    animation: fade-in 0.7s ease 6.8s 1 forwards;
+
+}
+
+.link:hover {
+    border-bottom: #FF8000 solid 0.1vh;
+    color: #FF8000;
+}
+
+.top {
+    top: 5%;
+    width: 100%;
+    opacity: 0%;
+    position: fixed;
+    align-content: center;
+    justify-content: center;
+    animation: fade-in 0.7s ease 6s 1 forwards;
+
+
+}
+.version {
+    opacity: 0;
+    animation: fade-in 0.7s ease 6.4s 1 forwards;
+
+}
+.micro-title {
+    font-family: 'Open Sans';
+    font-size: 1.4vh;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    opacity: 0;
+}
+
+
+.orange {
+    color: #FF8000;
+}
+
+.footer {
+    animation: fade-in 0.7s ease 6.6s 1 forwards;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+    bottom: 7%;
+    opacity: 0;
+}
+
+.footer-2 {
+    animation: fade-in 0.7s ease 6.8s 1 forwards;
+    text-align: center;
+    justify-content: end;
+    align-content: end;
+    position: fixed;
+    bottom: 3%;
+    width: 100%;
+    opacity: 0;
+}
+
+/* Button CSS */
+.button {
+    background-color: #FF8000;
+    height: 4vh;
+    width: 20vh;
+    align-items: center;
+    display: grid;
+    letter-spacing: 0.1vw;
+    transition: all ease 0.3s;
+    font-size: 0.75vw;
+    color: white;
+    z-index: 1;
+    opacity: 0;
+    animation: fade-in 0.7s ease 6.2s 1 forwards;
+}
+
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    letter-spacing: 0.1vw;
+    color: #FF8000;
+    letter-spacing: 0.2vw;
+    border-radius: 1px 1px 1px 1px;
+
+}
+
+.button-layer {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+
+.icon {
+    height: 100%;
+    width: 100%;
+    background-image: url("https://media.smultar.com/svg/backgrounds/prometheus-background.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    opacity: 0!important;
+    animation: fade-in 4s ease 0s 1 forwards;
+    z-index: 2;
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    animation: fade-in 4s ease 0s 1 forwards;
+    opacity: 0;
+    z-index: -1;
+    display: block;
+}
+
+.textContainer {
+    height: 100%;
+    width: 100%;
+    background-image: url("https://media.smultar.com/svg/backgrounds/prometheus-x-layer.svg");
+    background-size: auto;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 30%;
+    
+}
+
+.version {
+    font-size: 0.75vw;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+    opacity: 0;
+    animation: fade-in 0.7s ease 6s 1 forwards;
+
+}
+
+.prometheus {
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5vw;
+    margin: 0;
+    opacity: 0;
+    animation: prom 4s ease 4s 1 forwards;
+
+}
+
+#timer {
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 0.5vw;
+    z-index: 1;
+
+}
+
+/* Media Points */
+@media only screen and (max-width:1000px) {
+    .version {
+        font-size: 1.05vw;
+    }
+
+    .prometheus {
+        font-size: 8vw;
+    }
+
+    #timer {
+        font-size: 1vw
+    }
+
+    .button {
+        font-size: 1.5vw;
+    }
+
+    .micro-title {
+        font-size: 1.25vw;
+    }
+
+    .link {
+        font-size: 1.5vw;
+    }
+    .footer {
+        bottom: 9%;
+    }
+}
+
+
+@media only screen and (max-width:800px) {
+    .version {
+        font-size: 2.55vw;
+    }
+
+    .prometheus {
+        font-size: 8vw;
+    }
+
+    .button {
+        font-size: 1.5vw;
+    }
+
+    .micro-title {
+        font-size: 1.25vw;
+    }
+
+    .link {
+        font-size: 1.75vw;
+    }
+}
+
+
+@media only screen and (max-width:450px) {
+    .version {
+        font-size: 3.05vw;
+    }
+
+    .prometheus {
+        font-size: 12vw;
+    }
+
+    .button {
+        font-size: 3vw;
+    }
+
+    .micro-title {
+        font-size: 2.5vw;
+        width: 100%;
+    }
+
+    .link {
+        font-size: 2.2vw;
+    }
+}
