@@ -200,7 +200,7 @@ a:active {
     position: fixed;
     animation: fade-in 4s ease 0s 1 forwards;
     opacity: 0;
-    z-index: -1;
+    z-index: 100;
     display: block;
 }
 
